@@ -3,14 +3,6 @@ function createBSeetCode()
   this._solutions = invalid
   this._questions = invalid
 
-  this.setSolutions = function(solutions)
-    m._solutions = solutions
-  end function
-
-  this.setQuestions = function(params)
-    m._questions = params
-  end function
-
   this._executeSolutionOnce = function(solution, solutionName, input, expectedOutput)
     timeSpan = CreateObject("roTimespan")
     output = solution(input)
@@ -31,6 +23,14 @@ function createBSeetCode()
     print "---------------------END----------------------------" 
   end function
 
+  this.setSolutions = function(solutions)
+    m._solutions = solutions
+  end function
+
+  this.setQuestions = function(params)
+    m._questions = params
+  end function
+  
   this.executeSolutions = function()
     for each solutionName in m._solutions
       m._executeSolutionWithMultipleParams(m._solutions[solutionName], solutionName)
