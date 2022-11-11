@@ -31,3 +31,27 @@ The Solution `params` argument should always be an Array since it will contain a
 
 ## NOTE
 Due to the fact how "pseudo class" (essentially AssocArray with anon functions) works in BrightScript, class methods are always public. For that reason private objects and methods of the class which are marked with `_` prefix should not be accessed from outside of the BSeetCode objects.
+
+## USAGE
+1. Add Question as per instructions
+2. Add Solution as per intructions
+3. Sideload the Channel/Application usinf IDE or manually
+
+## CONSOLE OUTPUT
+
+    --- LONGESTPALINDROMICSUBSTRING ---
+    Your input: <Component: roArray> =
+    [
+	    "babad"
+    ]
+    Execution time: 0 ms
+    Your output: invalid vs Expected output: bab
+    ************************************
+    Your input: <Component: roArray> =
+    [
+	    "cbbd"
+    ]
+    Execution time: 0 ms
+    Your output: invalid vs Expected output: bb
+    ************************************
+    ---------------------END----------------------------
