@@ -1,31 +1,31 @@
 function createBSeetCode()
   this = {}
   this._solutions = invalid
-  this._solutionsParams = invalid
+  this._questions = invalid
 
   this.setSolutions = function(solutions)
     m._solutions = solutions
   end function
 
-  this.setSolutionsParams = function(params)
-    m._solutionsParams = params
+  this.setQuestions = function(params)
+    m._questions = params
   end function
 
   this._executeSolutionOnce = function(solution, solutionName, input, expectedOutput)
     timeSpan = CreateObject("roTimespan")
-    solutionResult = solution(input)
+    output = solution(input)
     print "EXECUTION TIME: " ; timeSpan.TotalMilliseconds() ; " ms"
-    print "YOUR OUTPUT " ; solutionResult " VS " "EXPECTED OUTPUT " ; expectedOutput   
+    print "YOUR OUTPUT " ; output " VS " "EXPECTED OUTPUT " ; expectedOutput   
   end function
 
   this._executeSolutionWithMultipleParams = function(solution, solutionName)
     print "---------------------START----------------------------" 
-    solutionParams = m._solutionsParams[solutionName]
+    questionsParams = m._questions[solutionName]
     print "--- " + UCase(solutionName) + " ---"
-    for i = 0 to solutionParams.count() - 1
-      singleSolutionParams = solutionParams[i]
-      print "YOUR INPUT " ; singleSolutionParams.input
-      m._executeSolutionOnce(solution, solutionName, singleSolutionParams.input, singleSolutionParams.expectedOutput)
+    for i = 0 to questionsParams.count() - 1
+      singleQuestionParams = questionsParams[i]
+      print "YOUR INPUT " ; singleQuestionParams.input
+      m._executeSolutionOnce(solution, solutionName, singleQuestionParams.input, singleQuestionParams.expectedOutput)
       print "************************************ "
     end for
     print "---------------------END----------------------------" 

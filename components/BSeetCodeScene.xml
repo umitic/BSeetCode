@@ -3,5 +3,5 @@
 <script type="text/brightscript" uri="BSeetCodeScene.brs" />
 <script type="text/brightscript" uri="pkg:/source/BSeetCode/BSeetCode.brs" />
 <script type="text/brightscript" uri="pkg:/source/BSeetCode/Solutions.brs" />
-<script type="text/brightscript" uri="pkg:/source/BSeetCode/SolutionsParams.brs" />
+<script type="text/brightscript" uri="pkg:/source/BSeetCode/Questions.brs" />
 </component>
