@@ -30,4 +30,4 @@ The Solution `params` argument should always be an Array since it will contain a
 **IMPORTANT** : Name of the Solution and name of the Question added to Questions script needs to be identical!
 
 ## NOTE
-Due to the fact how "pseudo class" (essentially AssocArray with anon functions) works in BrightScript their methods are always public. For that reason private objects and methods of the class which are marked with `_` prefix should not be accessed from outside of the BSeetCode objects.
+Due to the fact how "pseudo class" (essentially AssocArray with anon functions) works in BrightScript, class methods are always public. For that reason private objects and methods of the class which are marked with `_` prefix should not be accessed from outside of the BSeetCode objects.
