@@ -1,13 +1,13 @@
 function createSolutions()
   this = {}
 
-  this.AddTwoNumbers = function(params)
+  this.addTwoNumbers = function(params)
   end function
 
-  this.LongestSubstringWithoutRepeatingCharacters = function(params)
+  this.longestSubstringWithoutRepeatingCharacters = function(params)
   end function
 
-  this.LongestPalindromicSubstring = function(params)
+  this.longestPalindromicSubstring = function(params)
   end function
 
   return this

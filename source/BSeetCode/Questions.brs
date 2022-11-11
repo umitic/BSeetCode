@@ -1,6 +1,6 @@
 function getQuestions()
   return {
-    AddTwoNumbers: [
+    addTwoNumbers: [
       {
         input: [[2,4,3], [2,4,3]]
         expectedOutput: [7, 0, 8]
@@ -14,7 +14,7 @@ function getQuestions()
         expectedOutput: [8,9,9,9,0,0,0,1]
       }
     ]
-    LongestSubstringWithoutRepeatingCharacters: [
+    longestSubstringWithoutRepeatingCharacters: [
       {
         input: ["abcabcbb"]
         expectedOutput: 3
@@ -28,7 +28,7 @@ function getQuestions()
         expectedOutput: 3
       }
     ]
-    LongestPalindromicSubstring: [
+    longestPalindromicSubstring: [
       {
         input: ["babad"]
         expectedOutput: "bab"

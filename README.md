@@ -22,10 +22,10 @@ You can add multiple params for the same Question essentically allowing you to t
 ## Adding a new Solution
 In order to add a new Solution go to `source/BSeetCode/Solutions.brs` and inside the `createSolutions()` function add a following a new solution function:
 
-    this.nameOfTheSolution = function(params as Array)
+    this.nameOfTheSolution = function(params)
 	    //Write your Solution code to the Question
     end function
-The Solution params argument should always be an Array since it will contain arguments/params from `input` field of Question config.
+The Solution `params` argument should always be an Array since it will contain arguments/params from `input` field of Question config.
 
 **IMPORTANT** : Name of the Solution and name of the Question added to Questions script needs to be identical!
 
